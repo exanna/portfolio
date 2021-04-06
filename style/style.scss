@@ -1,7 +1,20 @@
+$color1: #986F39;
+$white: #F2F2F2;
+
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   scroll-behavior: smooth;
+
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   cursor: default;
+   background-color: $white;
+   max-width: 1920px;
+   margin: 0 auto;
 }
 
 a {
@@ -13,35 +26,25 @@ li {
    list-style: none;
 }
 
-body {
-   font-family: 'Roboto', sans-serif;
+
+.section {
+   height: 100vh;
+   width: 100%;
 }
 
 .hero {
    background-image: url('../img/hero.png');
    background-position: center center;
-   background-size: cover;
-   height: 100vh;
-   width: 100%;
+   background-size: cover;   
    position: relative;
    display: flex;
 
-   // &:after {
-   //    content: '';
-   //    display: block;
-   //    position: absolute;
-   //    top: 0;
-   //    bottom: 0;
-   //    left: 0;
-   //    right: 0;
-   //    background-color: rgba(0, 0, 0, 0.4);
-   // }
    &__nav {
       height: 100%;
    }
 
    &__content {
-      color: white;
+      color: $white;
       font-size: 40px;
       background-color: rgba(0, 0, 0, 0.4);
       height: 100%;
@@ -55,6 +58,7 @@ body {
 
       h1 {
          font-size: 2em;
+         text-transform: uppercase;
       }
 
       h2 {
@@ -64,6 +68,17 @@ body {
       h3 {
          font-size: 1.6em;
       }
+   }
+
+   &__logo {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 700;
+      font-family: 'Press Start 2P', cursive;
+      border: 3px solid rgba(255, 255, 255, 0.5);
+      padding: 10px;
    }
 }
 
@@ -83,7 +98,7 @@ body {
       display: block;
       line-height: 4;
       padding: 0 40px;
-      color: white;   
+      color: $white;   
       text-transform: uppercase;
       transition: all .3s;
       font-size: 18px;
@@ -93,8 +108,68 @@ body {
       }
    }
 
-
-
-
 }
 
+.about {
+   height: auto;
+   color: $color1;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   padding: 5%;
+   position: relative;
+   overflow: hidden;
+
+   &:after {
+      transform: skew(-0.03turn, 12deg);
+      content: 'web design <3';
+      font-size: 300px;
+      color: white;
+      position: absolute;
+      top: 10%;
+      bottom: 0;
+      left: 10%;
+      right: 0;
+      z-index: -1;
+      line-height: .8;
+   }
+
+   &__title {
+      margin: 100px 0;
+      font-size: 56px;
+   }
+
+   &__p {
+      line-height: 1.6;
+      text-align: justify;
+      font-size: 24px;
+      margin: 50px 0;
+   }
+}
+
+.skills {
+   display: flex;
+   justify-content: space-around;
+   align-items: space-around;
+   flex-wrap: wrap;
+
+   &__box {
+      margin-top: 30px;
+      border: 2px solid red;
+      width: 23vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   
+   &__img {
+      width: 100px;
+   }
+   
+   &__info {
+      font-size: 30px;
+      font-weight: 700;
+      padding: 10px;
+   }
+}
