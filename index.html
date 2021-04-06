@@ -11,7 +11,7 @@
    <meta name="description" content="Frontend portfolio, prawie najlepsze portfolio w internecie.">
    <meta property="og:title" content="Portfolio - Paulina Lubasińska">
    <meta property="og:description" content="Front-end portfolio, prawie najlepsze portfolio w internecie.">
-   <meta property="og:image" content="img/screen.png">
+   <meta property="og:image" content="/img/screen.png">
 
    <!-- my styles -->
    <link rel="stylesheet" href="style/style.css">
@@ -36,7 +36,7 @@
                   <a href="#skills" class="nav__link">Umiejętności</a>
                </li>
                <li class="nav__item">
-                  <a href="" class="nav__link">Projekty</a>
+                  <a href="#projects" class="nav__link">Projekty</a>
                </li>
                <li class="nav__item">
                   <a href="" class="nav__link">Kontakt</a>
@@ -57,39 +57,92 @@
          </p>                  
       </section>
       <!-- UMIEJĘTNOŚCI -->
-      <section id="skills" class="skills">         
+      <section id="skills" class="skills">        
+         <h2 class="skills__title">Wykorzystywane technologie i narzędzia</h2> 
          <div class="skills__box">
-            <img class="skills__img" src="./img/icons/html.png" alt="">
+            <img class="skills__img" src="./img/icons/html.png" alt="HTML">
             <span class="skills__info">HTML</span>
          </div>
          <div class="skills__box">
-            <img class="skills__img" src="./img/icons/css-file.png" alt="">
+            <img class="skills__img" src="./img/icons/css-file.png" alt="CSS">
             <span class="skills__info">CSS</span>
          </div>
          <div class="skills__box">
-            <img class="skills__img" src="./img/icons/sass.png" alt="">
+            <img class="skills__img" src="./img/icons/sass.png" alt="SASS/SCSS">
             <span class="skills__info">SASS</span>
          </div>
          <div class="skills__box">
-            <img class="skills__img" src="./img/icons/wordpress.png" alt="">
+            <img class="skills__img" src="./img/icons/wordpress.png" alt="Wordpress">
             <span class="skills__info">Wordpress</span>
          </div>
          <div class="skills__box">
-            <img class="skills__img" src="" alt="">
-            <span class="skills__info">Info</span>
+            <img class="skills__img" src="./img/icons/javascript.png" alt="JavaScript">
+            <span class="skills__info">JavaScript</span>
          </div>
          <div class="skills__box">
-            <img class="skills__img" src="" alt="">
-            <span class="skills__info">Info</span>
+            <img class="skills__img" src="./img/icons/physics.png" alt="React">
+            <span class="skills__info">React</span>
          </div>
-         <div class="skills__box">
-            <img class="skills__img" src="" alt="">
-            <span class="skills__info">Info</span>
+         <div class="skills__box skills__box--small">
+            <img class="skills__img" src="./img/icons/webpack.png" alt="Webpack">
+            <span class="skills__info">Webpack</span>
          </div>
-         <div class="skills__box">
-            <img class="skills__img" src="" alt="">
-            <span class="skills__info">Info</span>
+         <div class="skills__box skills__box--small">
+            <img class="skills__img" src="./img/icons/npm.png" alt="Node packeg manager">
+            <span class="skills__info">NPM</span>
          </div>
+         <div class="skills__box skills__box--small">
+            <img class="skills__img" src="./img/icons/bootstrap.png" alt="Bootstrap">
+            <span class="skills__info">Bootstrap</span>
+         </div>
+         <div class="skills__box skills__box--small">
+            <img class="skills__img" src="./img/icons/git.png" alt="GIT">
+            <span class="skills__info">GIT</span>
+         </div>
+         <div class="skills__box skills__box--small">
+            <img class="skills__img" src="./img/icons/material-ui.png" alt="Material UI">
+            <span class="skills__info">Material UI</span>
+         </div>
+      </section>
+      <section id="projects" class="projects">
+         <h2 class="projects__title">Moje projekty</h2>
+         <div class="projects__box">
+            <img class="projects__img" src="./img/projects/timesApp.PNG" alt="TimesApp">
+            <a target="_blank" href="https://exanna.github.io/timesApp/" class="projects__link">LIVE</a>
+            <a target="_blank" href="https://github.com/exanna/timesApp" class="projects__link">CODE</a>
+            <div class="projects__info">Aplikacja internetowa licząca różnicę między konkretnymi datami wybranymi przez użytkownika. </div>
+         </div>
+         <div class="projects__box">
+            <img class="projects__img" src="./img/projects/stokrotka.PNG" alt="Jurajska Stokrotka">
+            <a target="_blank" href="https://exanna.github.io/stokrotka-north-by-design/" class="projects__link">LIVE</a>
+            <a target="_blank" href="https://github.com/exanna/stokrotka-north-by-design" class="projects__link">CODE</a>
+            <div class="projects__info">Projekt wykonany na stażu w ramach sprawdzenia umiejętności. Prosty landing page. </div>
+         </div>         
+         <div class="projects__box">
+            <img class="projects__img" src="./img/projects/calcJS.PNG" alt="Kalkulator JavaScript">
+            <a target="_blank" href="https://exanna.github.io/calculator-www-js/" class="projects__link">LIVE</a>
+            <a target="_blank" href="https://github.com/exanna/calculator-www-js" class="projects__link">CODE</a>
+            <div class="projects__info">Kalkulator kosztów strony WWW w JavaScript </div>
+         </div>
+         <div class="projects__box">
+            <img class="projects__img" src="./img/projects/kliker.PNG" alt="Kalkulator JavaScript">
+            <a target="_blank" href="https://exanna.github.io/moneyClicker/" class="projects__link">LIVE</a>
+            <a target="_blank" href="https://github.com/exanna/moneyClickers" class="projects__link">CODE</a>
+            <div class="projects__info">Prosta gra typu kliker </div>
+         </div>
+         <div class="projects__box">
+            <img class="projects__img" src="./img/projects/react.PNG" alt="Kalkulator React">
+            <a target="_blank" href="https://exanna.github.io/calculator-reactjs/calculator" class="projects__link">LIVE</a>
+            <a target="_blank" href="https://github.com/exanna/calculator-reactjs" class="projects__link">CODE</a>
+            <div class="projects__info">Kalkulator w React, projekt jeszcze nieskończony.  </div>
+         </div>
+         <div class="projects__box">
+            <img class="projects__img" src="./img/projects/calcJS.PNG" alt="Kalkulator PHP">
+            <a target="_blank" href="https://calculator-www.herokuapp.com/" class="projects__link">LIVE</a>
+            <a target="_blank" href="https://github.com/exanna/calculator-www-php" class="projects__link">CODE</a>
+            <div class="projects__info">Kalkulator kosztów strony WWW w PHP </div>
+         </div>
+         
       </section>
    </div>
 </body>

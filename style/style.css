@@ -139,7 +139,7 @@ li {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 5%;
+  padding: 5% 10%;
   position: relative;
   overflow: hidden;
 }
@@ -181,12 +181,23 @@ li {
           align-items: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 80vw;
+  margin: 0 auto;
+  color: #495B36;
+}
+
+.skills__title {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+  font-size: 56px;
+  letter-spacing: 3px;
+  padding: 100px 0 50px;
 }
 
 .skills__box {
-  margin-top: 30px;
-  border: 2px solid red;
-  width: 23vw;
+  margin-top: 100px;
+  width: 33%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,6 +213,18 @@ li {
           align-items: center;
 }
 
+.skills__box--small {
+  width: 15vw;
+}
+
+.skills__box--small .skills__img {
+  width: 50px;
+}
+
+.skills__box--small .skills__info {
+  font-size: 20px;
+}
+
 .skills__img {
   width: 100px;
 }
@@ -210,5 +233,80 @@ li {
   font-size: 30px;
   font-weight: 700;
   padding: 10px;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 150px auto;
+  background-color: #495B36;
+  padding: 150px 0;
+  color: #F2F2F2;
+}
+
+.projects__title {
+  width: 100%;
+  text-align: center;
+  font-size: 56px;
+  letter-spacing: 3px;
+  padding-bottom: 100px;
+  color: #F2F2F2;
+}
+
+.projects__box {
+  width: 30%;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects__img {
+  width: 70%;
+  border-radius: 40px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.projects__info {
+  width: 70%;
+  padding: 30px 0 0;
+  line-height: 1.3;
+  font-size: 18px;
+  text-align: center;
+}
+
+.projects__link {
+  color: #EEAF4B;
+  font-size: 36px;
+  width: 35%;
+  text-align: center;
+  margin-top: 20px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.projects__link:hover {
+  color: #F2F2F2;
 }
 /*# sourceMappingURL=style.css.map */
