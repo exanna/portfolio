@@ -151,12 +151,11 @@ li {
   font-size: 300px;
   color: white;
   position: absolute;
-  top: 10%;
-  bottom: 0;
-  left: 10%;
-  right: 0;
+  top: 30%;
+  left: 5%;
   z-index: -1;
   line-height: .8;
+  font-style: italic;
 }
 
 .about__title {
