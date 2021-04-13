@@ -11,7 +11,7 @@
    <meta name="description" content="Frontend portfolio, prawie najlepsze portfolio w internecie.">
    <meta property="og:title" content="Portfolio - Paulina Lubasińska">
    <meta property="og:description" content="Front-end portfolio, prawie najlepsze portfolio w internecie.">
-   <meta property="og:image" content="/img/screen.png">
+   <meta property="og:image" content="https://exanna.github.io/portfolio/img/screen.PNG">
 
    <!-- my styles -->
    <link rel="stylesheet" href="style/style.css">
@@ -21,6 +21,11 @@
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+   <!-- fontello -->
+   <link rel="stylesheet" href="fontello/css/fontello.css">
 
 </head>
 <body>
@@ -52,13 +57,13 @@
       </header>
       <!-- O MNIE -->
       <section id="about" class="about section">
-         <h2 class="about__title">Nazywam się Paulina Lubasińska</h2>
+         <h2 class="title about__title">Nazywam się Paulina Lubasińska</h2>
          <p class="about__p">Jestem początkującym frontend developerem. W 2019 roku ukończyłam bootcamp CodersCamp z wyróżnieniem. Sprawnie poruszam się w takich technologiach jak HTML, CSS, SASS, Wordpress. Teraz uczę się JavaScript oraz React. Znam też takie narzędzia jak npm, webpack oraz git. W swojej pracy wykorzystywałam równierz Bootstrap, Material UI, Semantic UI, Materialize, Lightbox, GSAP i wiele innych. W styczniu 2021 roku ukończyłam staż w agencji reklamowej gdzie tworzyłam strony internetowe dla klientów w Wordpress. Teraz szukam pracy, która pozwoli mi rozwinąć się w programowaniu.
          </p>                  
       </section>
       <!-- UMIEJĘTNOŚCI -->
       <section id="skills" class="skills">        
-         <h2 class="skills__title">Wykorzystywane technologie i narzędzia</h2> 
+         <h2 class="title skills__title">Wykorzystywane technologie i narzędzia</h2> 
          <div class="skills__box">
             <img class="skills__img" src="./img/icons/html.png" alt="HTML">
             <span class="skills__info">HTML</span>
@@ -104,48 +109,131 @@
             <span class="skills__info">Material UI</span>
          </div>
       </section>
+      <!-- PROJEKTY -->
       <section id="projects" class="projects">
-         <h2 class="projects__title">Moje projekty</h2>
+         <h2 class="title projects__title">Moje projekty</h2>
          <div class="projects__box">
-            <img class="projects__img" src="./img/projects/timesApp.PNG" alt="TimesApp">
-            <a target="_blank" href="https://exanna.github.io/timesApp/" class="projects__link">LIVE</a>
-            <a target="_blank" href="https://github.com/exanna/timesApp" class="projects__link">CODE</a>
-            <div class="projects__info">Aplikacja internetowa licząca różnicę między konkretnymi datami wybranymi przez użytkownika. </div>
+            <div class="project">
+               <a class="project__img" target="_blank" href="https://exanna.github.io/timesApp/">
+                  <img src="./img/projects/timesApp.PNG" alt="TimesApp - aplikacja internetowa">
+               </a>
+               <div class="project__content">
+                  <h3 class="project__title">TimesApp</h3>
+                  <p class="project__desc">Aplikacja internetowa licząca różnicę między konkretnymi datami wybranymi przez użytkownika.</p>
+                  <span class="project__tech">Użyte technologie: HTML, CSS (BEM), Javascript</span>
+                  <div>
+                     <a class="project__links" target="_blank" href="https://exanna.github.io/timesApp/">live</a>
+                     <a class="project__links" target="_blank" href="https://github.com/exanna/timesApp">code</a>
+                  </div>
+               </div>
+            </div>
          </div>
          <div class="projects__box">
-            <img class="projects__img" src="./img/projects/stokrotka.PNG" alt="Jurajska Stokrotka">
-            <a target="_blank" href="https://exanna.github.io/stokrotka-north-by-design/" class="projects__link">LIVE</a>
-            <a target="_blank" href="https://github.com/exanna/stokrotka-north-by-design" class="projects__link">CODE</a>
-            <div class="projects__info">Projekt wykonany na stażu w ramach sprawdzenia umiejętności. Prosty landing page. </div>
+            <div class="project project--inverse">
+               <a class="project__img" target="_blank" href="https://exanna.github.io/stokrotka-north-by-design/">
+                  <img src="./img/projects/stokrotka.PNG" alt="Jurajska Stokrotka - strona internetowa">
+               </a>
+               <div class="project__content">
+                  <h3 class="project__title">Jurajska Stokrotka - landing page</h3>
+                  <p class="project__desc">Projekt wykonany na stażu w agencji reklamowej w ramach sprawdzenia umiejętności. Jest to prosty landing page, z przepięknymi zdjęciami jurajskiego krajobrazu.</p>
+                  <span class="project__tech">Użyte technologie: HTML, CSS, Javascript</span>
+                  <div>
+                     <a class="project__links" target="_blank" href="https://exanna.github.io/stokrotka-north-by-design/">live</a>
+                     <a class="project__links" target="_blank" href="https://github.com/exanna/stokrotka-north-by-design">code</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="projects__box">
+            <div class="project">
+               <a class="project__img" target="_blank" href="https://exanna.github.io/calculator-www-js/">
+                  <img src="./img/projects/calcJS.PNG" alt="Kalkulator JavaScript">
+               </a>
+               <div class="project__content">
+                  <h3 class="project__title">Kalkulator stron w języku JavaScript</h3>
+                  <p class="project__desc">Projekt wykonany na stażu w agencji reklamowej. Kalkulator oblicza koszt strony www wykonanej w Wordpress CMS</p>
+                  <span class="project__tech">Użyte technologie: HTML, CSS, Javascript</span>
+                  <div>
+                     <a class="project__links" target="_blank" href="https://exanna.github.io/calculator-www-js/">live</a>
+                     <a class="project__links" target="_blank" href="https://github.com/exanna/calculator-www-js">code</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="projects__box">
+            <div class="project project--inverse">
+               <a class="project__img" target="_blank" href="https://exanna.github.io/moneyClicker/">
+                  <img src="./img/projects/kliker.PNG" alt="Gra typu clicker">
+               </a>
+               <div class="project__content">
+                  <h3 class="project__title">ClickMe</h3>
+                  <p class="project__desc">Prosta gra typu kliker w JavaScript. Projekt wykonany po poznaniu zupełnych podstaw pracy z DOM.</p>
+                  <span class="project__tech">Użyte technologie: HTML, CSS, Javascript</span>
+                  <div>
+                     <a class="project__links" target="_blank" href="https://exanna.github.io/moneyClicker/">live</a>
+                     <a class="project__links" target="_blank" href="https://github.com/exanna/moneyClickers">code</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="projects__box">
+            <div class="project">
+               <a class="project__img" target="_blank" href="https://exanna.github.io/calculator-reactjs">
+                  <img src="./img/projects/react.PNG" alt="Gra typu clicker">
+               </a>
+               <div class="project__content">
+                  <h3 class="project__title">Kalkulator React</h3>
+                  <p class="project__desc">Kalkulator w React, projekt jeszcze nie dokończony. W projekcie użyty między innymi React Router oraz Styled Components</p>
+                  <span class="project__tech">Użyte technologie: HTML, CSS, React</span>
+                  <div>
+                     <a class="project__links" target="_blank" href="https://exanna.github.io/calculator-reactjs">live</a>
+                     <a class="project__links" target="_blank" href="https://github.com/exanna/calculator-reactjs">code</a>
+                  </div>
+               </div>
+            </div>
          </div>         
          <div class="projects__box">
-            <img class="projects__img" src="./img/projects/calcJS.PNG" alt="Kalkulator JavaScript">
-            <a target="_blank" href="https://exanna.github.io/calculator-www-js/" class="projects__link">LIVE</a>
-            <a target="_blank" href="https://github.com/exanna/calculator-www-js" class="projects__link">CODE</a>
-            <div class="projects__info">Kalkulator kosztów strony WWW w JavaScript </div>
-         </div>
-         <div class="projects__box">
-            <img class="projects__img" src="./img/projects/kliker.PNG" alt="Kalkulator JavaScript">
-            <a target="_blank" href="https://exanna.github.io/moneyClicker/" class="projects__link">LIVE</a>
-            <a target="_blank" href="https://github.com/exanna/moneyClickers" class="projects__link">CODE</a>
-            <div class="projects__info">Prosta gra typu kliker </div>
-         </div>
-         <div class="projects__box">
-            <img class="projects__img" src="./img/projects/react.PNG" alt="Kalkulator React">
-            <a target="_blank" href="https://exanna.github.io/calculator-reactjs/calculator" class="projects__link">LIVE</a>
-            <a target="_blank" href="https://github.com/exanna/calculator-reactjs" class="projects__link">CODE</a>
-            <div class="projects__info">Kalkulator w React, projekt jeszcze nieskończony.  </div>
-         </div>
-         <div class="projects__box">
-            <img class="projects__img" src="./img/projects/calcJS.PNG" alt="Kalkulator PHP">
-            <a target="_blank" href="https://calculator-www.herokuapp.com/" class="projects__link">LIVE</a>
-            <a target="_blank" href="https://github.com/exanna/calculator-www-php" class="projects__link">CODE</a>
-            <div class="projects__info">Kalkulator kosztów strony WWW w PHP </div>
-         </div>
-         
+            <div class="project project--inverse">
+               <a class="project__img" target="_blank" href="https://calculator-www.herokuapp.com/">
+                  <img src="./img/projects/calcJS.PNG" alt="Kalkulator JavaScript">
+               </a>
+               <div class="project__content">
+                  <h3 class="project__title">Kalkulator kosztów strony WWW w PHP</h3>
+                  <p class="project__desc">Projekt wykonany na stażu w agencji reklamowej. Kalkulator oblicza koszt strony www wykonanej w Wordpress CMS</p>
+                  <span class="project__tech">Użyte technologie: HTML, CSS, PHP</span>
+                  <div>
+                     <a class="project__links" target="_blank" href="https://calculator-www.herokuapp.com/">live</a>
+                     <a class="project__links" target="_blank" href="https://github.com/exanna/calculator-www-php">code</a>
+                  </div>
+               </div>
+            </div>
+         </div> 
       </section>
+      <!-- KONTAKT -->
+      <section class="contact">
+         <div class="contact__socials">
+            <a class="contact__link" target="_blank" href="https://github.com/exanna">
+               <i class="icon-github-circled"></i>
+            </a>
+            <a class="contact__link" target="_blank" href="https://www.facebook.com/zosisko">
+               <i class="icon-facebook"></i>
+            </a>
+            <a class="contact__link" href="mailto:lubasinska.paulina@gmail.com">
+               <i class="icon-mail-alt"></i>
+            </a>
+         </div>
+      </section>
+      <footer class="footer">
+         <div class="footer__add">
+            <div>
+               Icons made by 
+               <a href="https://www.freepik.com" title="Freepik">Freepik</a> 
+               from 
+               <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </div>
+         </div>
+         <div class="footer__copy">&copy; Paulina Lubasińska 2021</div>
+      </footer>
    </div>
 </body>
 </html>
-
-<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
