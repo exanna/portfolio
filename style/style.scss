@@ -230,8 +230,17 @@ li {
       justify-content: center;
       align-items: center;
 
+
+      @media(max-width: 500px) {
+         margin-top: 50px;
+      }
+
       &--small {
          width: 15vw;
+
+         @media(max-width: 500px) {
+            width: 30vw;
+         }
 
          .skills__img {
             width: 50px;
@@ -243,6 +252,10 @@ li {
 
          .skills__info {
             font-size: 20px;
+
+            @media(max-width: 500px) {
+               font-size: 16px;
+            }
          }
       }
    }
@@ -259,6 +272,10 @@ li {
       font-size: 30px;
       font-weight: 700;
       padding: 10px;
+
+      @media(max-width: 500px) {
+         font-size: 20px;
+      }
    }
 }
 
