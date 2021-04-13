@@ -332,6 +332,12 @@ li {
   color: #F2F2F2;
 }
 
+@media (max-width: 500px) {
+  .projects__title {
+    margin-top: 50px;
+  }
+}
+
 .projects__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -340,6 +346,12 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  .projects__box {
+    margin: 3%;
+  }
 }
 
 .project {
