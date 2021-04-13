@@ -21,6 +21,7 @@ body {
    max-width: 1920px;
    margin: 0 auto;
    overflow-x: hidden;
+   
 }
 
 .container {
@@ -177,6 +178,10 @@ li {
       z-index: -1;
       line-height: .8;
       font-style: italic;
+
+      @media(max-width: 1024px) {
+         display: none;
+      }
    }
 
    &__title {
@@ -214,6 +219,10 @@ li {
       z-index: -1;
       line-height: .8;
       font-style: italic;
+
+      @media(max-width: 1024px) {
+         display: none;
+      }
    }
 
    &__title {
@@ -309,10 +318,10 @@ li {
    &__box {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-      @media(max-width: 500px) {
-         margin: 3%;
-      }
+      
    }
 }
 
@@ -331,9 +340,9 @@ li {
       justify-content: center;
       padding: 2%;
    }
-   // @media(max-width: 500px) {
-   //    margin: 2%;
-   // }
+   @media(max-width: 500px) {
+      margin: 2%;
+   }
 
    
    &--inverse {
@@ -384,7 +393,10 @@ li {
       }
 
       @media(max-width: 500px) {
+
+         max-width: 100%;
          &>div {
+            max-width: 80%;
             display: flex;
          }      
       }
@@ -415,6 +427,12 @@ li {
       margin-right: 60px;
       color: $white;
       transition: background-color .3s;
+
+      @media(max-width: 500px) {
+         margin-right: 10px;
+         padding: 10px 40px;
+
+      }
 
       &:hover {
          background-color: lighten($color1, 20%);
